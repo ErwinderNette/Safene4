@@ -15,6 +15,7 @@ public class TruckRepo {
     // Truck adding
     public String addTruck(int position){
         id++;
+        update();
         Truck truck = new Truck(id);
 
     if(position >= truckList.size()) {
